@@ -1,0 +1,683 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="mkmr_urdf">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.026848 1.2161E-09 -0.0015"
+        rpy="0 0 0" />
+      <mass
+        value="0.10356" />
+      <inertia
+        ixx="0.00019183"
+        ixy="1.4335E-11"
+        ixz="-3.7875E-18"
+        iyy="0.00054091"
+        iyz="-2.4212E-16"
+        izz="0.00073259" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mkmr_urdf/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mkmr_urdf/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="chasis_link">
+    <inertial>
+      <origin
+        xyz="0 4.1495E-18 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.00099699" />
+      <inertia
+        ixx="1.6729E-08"
+        ixy="1.3955E-24"
+        ixz="-4.2831E-25"
+        iyy="1.6729E-08"
+        iyz="1.0901E-24"
+        izz="1.6306E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mkmr_urdf/meshes/chasis_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mkmr_urdf/meshes/chasis_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="chasis_joint"
+    type="fixed">
+    <origin
+      xyz="-0.032984 0.0355 0"
+      rpy="1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="chasis_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="front_left_wheel">
+    <inertial>
+      <origin
+        xyz="0.0276541292613763 -1.87646474809899E-06 1.57666719706462E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.0560727186165723" />
+      <inertia
+        ixx="6.88932711186556E-06"
+        ixy="1.76245309259351E-11"
+        ixz="-5.41183981510561E-10"
+        iyy="5.99576218639218E-06"
+        iyz="-3.31878466334002E-15"
+        izz="5.99591175154075E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mkmr_urdf/meshes/front_left_wheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mkmr_urdf/meshes/front_left_wheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="front_left_wheel_joint"
+    type="continuous">
+    <origin
+      xyz="0.082484 0.079 0"
+      rpy="3.1416 0 1.5708" />
+    <parent
+      link="chasis_link" />
+    <child
+      link="front_left_wheel" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="back_left_wheel">
+    <inertial>
+      <origin
+        xyz="-0.0276541333514382 -1.80382261885659E-06 1.45365052833801E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.0560724795860692" />
+      <inertia
+        ixx="6.88932076478125E-06"
+        ixy="1.31219765403673E-12"
+        ixz="5.51251253020269E-10"
+        iyy="5.99573790320883E-06"
+        iyz="3.31890152774439E-15"
+        izz="5.99588967548816E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mkmr_urdf/meshes/back_left_wheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mkmr_urdf/meshes/back_left_wheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="back_left_wheel_joint"
+    type="continuous">
+    <origin
+      xyz="-0.082516 0.079 0"
+      rpy="-3.1416 0 -1.5708" />
+    <parent
+      link="chasis_link" />
+    <child
+      link="back_left_wheel" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="back_right_wheel">
+    <inertial>
+      <origin
+        xyz="0.0276541292613763 -1.87646474805736E-06 1.5766671972936E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.0560727186165722" />
+      <inertia
+        ixx="6.88932711186555E-06"
+        ixy="1.76245309259047E-11"
+        ixz="-5.41183981502708E-10"
+        iyy="5.99576218639217E-06"
+        iyz="-3.31878561957823E-15"
+        izz="5.99591175154074E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mkmr_urdf/meshes/back_right_wheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mkmr_urdf/meshes/back_right_wheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="back_right_wheel_joint"
+    type="continuous">
+    <origin
+      xyz="-0.082516 -0.079 0"
+      rpy="-3.1416 0 -1.5708" />
+    <parent
+      link="chasis_link" />
+    <child
+      link="back_right_wheel" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="front_right_wheel">
+    <inertial>
+      <origin
+        xyz="-0.0276541333514382 -1.8038226189121E-06 1.45365052851842E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.0560724795860693" />
+      <inertia
+        ixx="6.88932076478125E-06"
+        ixy="1.31219765437681E-12"
+        ixz="5.51251253012634E-10"
+        iyy="5.99573790320883E-06"
+        iyz="3.31890108346737E-15"
+        izz="5.99588967548817E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mkmr_urdf/meshes/front_right_wheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mkmr_urdf/meshes/front_right_wheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="front_right_wheel_joint"
+    type="continuous">
+    <origin
+      xyz="0.082484 -0.079 0"
+      rpy="3.1416 0 1.5708" />
+    <parent
+      link="chasis_link" />
+    <child
+      link="front_right_wheel" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="fMotorBracket">
+    <inertial>
+      <origin
+        xyz="-1.3229E-15 -0.032955 -0.011689"
+        rpy="0 0 0" />
+      <mass
+        value="0.012335" />
+      <inertia
+        ixx="3.5106E-06"
+        ixy="-6.1577E-19"
+        ixz="8.5245E-17"
+        iyy="3.9563E-06"
+        iyz="1.1151E-19"
+        izz="3.6249E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mkmr_urdf/meshes/fMotorBracket.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mkmr_urdf/meshes/fMotorBracket.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="fMotorBracket_joint"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="1.5708 1.5708 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="fMotorBracket" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="fMotor">
+    <inertial>
+      <origin
+        xyz="1.38438734179739E-16 -0.0329999999999998 -0.0286699791392555"
+        rpy="0 0 0" />
+      <mass
+        value="0.178561366362791" />
+      <inertia
+        ixx="2.67099035171734E-05"
+        ixy="2.71802122275256E-07"
+        ixz="7.31095312598868E-20"
+        iyy="4.84691625842424E-05"
+        iyz="2.96234056870553E-23"
+        izz="4.83438681867705E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mkmr_urdf/meshes/fMotor.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mkmr_urdf/meshes/fMotor.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="fMotor_joint"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="fMotorBracket" />
+    <child
+      link="fMotor" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="scan">
+    <inertial>
+      <origin
+        xyz="-0.0074835 0.010668 9.1926E-05"
+        rpy="0 0 0" />
+      <mass
+        value="1.3308" />
+      <inertia
+        ixx="0.00061492"
+        ixy="0.00015824"
+        ixz="8.0198E-07"
+        iyy="0.0010982"
+        iyz="3.0916E-06"
+        izz="0.0009607" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mkmr_urdf/meshes/scan.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.25098 0.25098 0.25098 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mkmr_urdf/meshes/scan.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="scan_joint"
+    type="fixed">
+    <origin
+      xyz="0.054864 -0.08602 -0.000762"
+      rpy="3.1416 1.5708 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="scan" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="camera">
+    <inertial>
+      <origin
+        xyz="-1.9753E-06 0.006847 -0.0021451"
+        rpy="0 0 0" />
+      <mass
+        value="0.0025101" />
+      <inertia
+        ixx="9.3351E-08"
+        ixy="-4.6188E-12"
+        ixz="-3.3306E-11"
+        iyy="1.4089E-07"
+        iyz="4.3375E-09"
+        izz="8.8217E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mkmr_urdf/meshes/camera.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mkmr_urdf/meshes/camera.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="camera_joint"
+    type="fixed">
+    <origin
+      xyz="0.08282 -0.07342 -0.036649"
+      rpy="1.5708 1.5708 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="camera" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="fPC">
+    <inertial>
+      <origin
+        xyz="-2.4739E-18 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="1" />
+      <inertia
+        ixx="0.0014591"
+        ixy="3.9989E-20"
+        ixz="-7.1769E-20"
+        iyy="0.0019519"
+        iyz="1.1518E-19"
+        izz="0.00095529" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mkmr_urdf/meshes/fPC.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.50196 0.50196 0.50196 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mkmr_urdf/meshes/fPC.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="fPC_joint"
+    type="fixed">
+    <origin
+      xyz="0.02413 -0.03221 0"
+      rpy="3.1416 1.5708 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="fPC" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="fDrivers">
+    <inertial>
+      <origin
+        xyz="-0.0066268 0.045409 -0.0038442"
+        rpy="0 0 0" />
+      <mass
+        value="0.038483" />
+      <inertia
+        ixx="9.0009E-06"
+        ixy="1.2332E-07"
+        ixz="1.3383E-07"
+        iyy="2.1707E-05"
+        iyz="7.7075E-07"
+        izz="2.8384E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mkmr_urdf/meshes/fDrivers.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mkmr_urdf/meshes/fDrivers.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="fDrivers_joint"
+    type="fixed">
+    <origin
+      xyz="-0.039948 0.004651 0.037727"
+      rpy="-1.5708 0 -3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="fDrivers" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="fBattery">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="1" />
+      <inertia
+        ixx="0"
+        ixy="0"
+        ixz="0"
+        iyy="0"
+        iyz="0"
+        izz="0" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mkmr_urdf/meshes/fBattery.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mkmr_urdf/meshes/fBattery.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="fBattery_joint"
+    type="fixed">
+    <origin
+      xyz="-0.09476 -0.047958 0"
+      rpy="-3.1416 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="fBattery" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>
