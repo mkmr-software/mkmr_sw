@@ -13,7 +13,7 @@ See the [ROS Wiki](https://github.com/ros/solidworks_urdf_exporter), [GitHub](ht
 
 For download [click](https://github.com/mkorkmz/mkmr_sw/raw/main/sw2urdfSetup.exe)
 
-### Note !! After extracting the urdf file from Solidworks, some updates are required to use it in your ROS project.
+### Note !! After extracting the urdf file from Solidworks, some updates are required to use it in your ROS project , especially if it is in a simulation environment.
 
   ## Image
 
