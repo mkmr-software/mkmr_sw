@@ -19,18 +19,18 @@ For download [click](https://github.com/mkorkmz/mkmr_sw/raw/main/sw2urdfSetup.ex
 
 <table>
   <tr>
-    <td><img src="https://github.com/mkorkmz/mkmr_sw/blob/main/mkmr_sw_img/preview1.JPG?raw=true" width="500"></td>
-    <td><img src="https://github.com/mkorkmz/mkmr_sw/blob/main/mkmr_sw_img/preview2.JPG?raw=true" width="500"></td>
+    <td><img src="https://github.com/mkmr-software/mkmr_sw/blob/main/mkmr_sw_img/preview1.JPG?raw=true" width="500"></td>
+    <td><img src="https://github.com/mkmr-software/mkmr_sw/blob/main/mkmr_sw_img/preview2.JPG?raw=true" width="500"></td>
   </tr>
   
   <tr>
-    <td colspan="2">&nbsp;<img src="https://github.com/mkorkmz/mkmr_sw/blob/main/mkmr_sw_img/ss3.png?raw=true" width="1000"></td>
+    <td colspan="2">&nbsp;<img src="https://github.com/mkmr-software/mkmr_sw/blob/main/mkmr_sw_img/ss3.png?raw=true" width="1000"></td>
   </tr>
   
 </table>
 
 
-<img src="https://github.com/mkorkmz/mkmr_sw/blob/main/mkmr_sw_img/sw_exporter_initial.png?raw=true">
-<img src="https://github.com/mkorkmz/mkmr_sw/blob/main/mkmr_sw_img/sw_exporter_config.png?raw=true">
-<img src="https://github.com/mkorkmz/mkmr_sw/blob/main/mkmr_sw_img/sw_exporter_joints.png?raw=true">
-<img src="https://github.com/mkorkmz/mkmr_sw/blob/main/mkmr_sw_img/sw_exporter_links.png?raw=true">
+<img src="https://github.com/mkmr-software/mkmr_sw/blob/main/mkmr_sw_img/sw_exporter_initial.png?raw=true">
+<img src="https://github.com/mkmr-software/mkmr_sw/blob/main/mkmr_sw_img/sw_exporter_config.png?raw=true">
+<img src="https://github.com/mkmr-software/mkmr_sw/blob/main/mkmr_sw_img/sw_exporter_joints.png?raw=true">
+<img src="https://github.com/mkmr-software/mkmr_sw/blob/main/mkmr_sw_img/sw_exporter_links.png?raw=true">
